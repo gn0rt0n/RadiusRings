@@ -10,6 +10,8 @@ Useful for anything measured against a fixed range — weapon reach, aggro
 radius, building footprints, or (the case this was built for) checking how far
 apart placed markers are relative to a mod's own distance-gated behaviour.
 
+![Radius Rings in game](https://raw.githubusercontent.com/gn0rt0n/RadiusRings/main/docs/screenshot.png)
+
 ## Usage
 
 Press the toggle key (**RightAlt+R** by default) to show or hide the rings.
