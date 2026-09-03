@@ -1,0 +1,9 @@
+{
+  "name": "RadiusRings",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/gn0rt0n/RadiusRings",
+  "description": "Concentric, terrain-hugging distance rings around your character in configurable metre increments, toggled with a key bind, so you can judge distances by eye instead of guessing.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2333"
+  ]
+}
