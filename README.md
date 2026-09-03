@@ -18,7 +18,7 @@ They follow you and hug the terrain as you move.
 ## Configuration
 
 All settings live in the BepInEx config file for this plugin
-(`gary.valheim.radiusrings.cfg`), or in your mod manager's config editor.
+(`eleventhtower.valheim.radiusrings.cfg`), or in your mod manager's config editor.
 
 | Setting | Default | Description |
 | --- | --- | --- |

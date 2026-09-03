@@ -26,7 +26,7 @@ dotnet build "$HERE/RadiusRings.csproj" -c Release
 
 # --- optional live deploy, only if a local BepInEx install is found --------
 if [ -d "$BEPINEX_DIR/plugins" ]; then
-    DEST="$BEPINEX_DIR/plugins/gary-RadiusRings"
+    DEST="$BEPINEX_DIR/plugins/eleventhtower-RadiusRings"
     MANAGED="$(/bin/ls -d "$BEPINEX_DIR"/plugins/*-RadiusRings-*/ 2>/dev/null | head -1 || true)"
     if [ -n "$MANAGED" ]; then
         echo "SKIPPING the live deploy: a mod manager already owns this mod at"

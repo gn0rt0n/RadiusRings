@@ -8,7 +8,7 @@ namespace RadiusRings;
 [BepInPlugin(Guid, "Radius Rings", Version)]
 public class Plugin : BaseUnityPlugin
 {
-    private const string Guid = "gary.valheim.radiusrings";
+    private const string Guid = "eleventhtower.valheim.radiusrings";
     private const string Version = "1.0.0";
 
     private static readonly Color RingColor = new Color(0.25f, 0.9f, 1f, 0.85f);
