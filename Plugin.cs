@@ -166,6 +166,17 @@ public class Plugin : BaseUnityPlugin
         int segments = _segments.Value;
         Camera cam = Camera.main;
 
+        Vector3 labelDir = Vector3.forward;
+        if (cam != null)
+        {
+            Vector3 camForward = cam.transform.forward;
+            camForward.y = 0f;
+            if (camForward.sqrMagnitude > 0.0001f)
+            {
+                labelDir = camForward.normalized;
+            }
+        }
+
         for (int i = 0; i < _rings.Count; i++)
         {
             float radius = (i + 1) * spacing;
@@ -185,7 +196,7 @@ public class Plugin : BaseUnityPlugin
             }
 
             TextMesh label = _labels[i];
-            Vector3 labelPoint = new Vector3(center.x, center.y, center.z + radius);
+            Vector3 labelPoint = center + labelDir * radius;
             if (!ZoneSystem.instance.GetGroundHeight(labelPoint, out float labelHeight))
             {
                 labelHeight = player.transform.position.y;
