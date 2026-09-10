@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2
+
+- Verified against Valheim 1.0.7 (Unity 6, network version 39). No code changes
+  were needed; the rings and labels build and run against it unmodified.
+- Corrected "metre" to "meter" in the README, the in-game config descriptions,
+  and the package description.
+
 ## 1.0.1
 
 - Ring labels now face the direction the camera is looking (falling back to
@@ -12,5 +19,5 @@
 
 - Initial release. Toggleable concentric distance rings around the player,
   hugging terrain height, with configurable spacing, max radius, segment
-  count, refresh interval and highlight interval, plus a floating metre label
+  count, refresh interval and highlight interval, plus a floating meter label
   on every ring.
