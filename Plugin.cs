@@ -9,7 +9,7 @@ namespace RadiusRings;
 public class Plugin : BaseUnityPlugin
 {
     private const string Guid = "EleventhTower.valheim.radiusrings";
-    private const string Version = "1.0.0";
+    private const string Version = "1.0.2";
 
     private static readonly Color RingColor = new Color(0.25f, 0.9f, 1f, 0.85f);
     private static readonly Color HighlightColor = new Color(1f, 0.78f, 0.15f, 0.95f);
@@ -37,10 +37,10 @@ public class Plugin : BaseUnityPlugin
             new KeyboardShortcut(KeyCode.R, KeyCode.RightAlt),
             "Shows or hides the distance rings around your character.");
         _maxRadius = Config.Bind("General", "Max Radius", 50f,
-            new ConfigDescription("Rings are drawn out to this distance, in metres.",
+            new ConfigDescription("Rings are drawn out to this distance, in meters.",
                 new AcceptableValueRange<float>(5f, 500f)));
         _ringSpacing = Config.Bind("General", "Ring Spacing", 5f,
-            new ConfigDescription("Distance between rings, in metres.",
+            new ConfigDescription("Distance between rings, in meters.",
                 new AcceptableValueRange<float>(1f, 50f)));
         _segments = Config.Bind("General", "Ring Segments", 64,
             new ConfigDescription("Points per ring. Higher is smoother but costs more per refresh.",

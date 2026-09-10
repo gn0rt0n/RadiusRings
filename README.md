@@ -1,7 +1,7 @@
 # Radius Rings
 
 Draws concentric, terrain-hugging rings on the ground around your character,
-spaced at a configurable number of metres (5m by default), out to a
+spaced at a configurable number of meters (5m by default), out to a
 configurable maximum radius. Every Nth ring is drawn brighter and thicker, and
 every ring carries a floating "Xm" label, so you can judge distances by eye
 instead of guessing.
@@ -25,8 +25,8 @@ All settings live in the BepInEx config file for this plugin
 | Setting | Default | Description |
 | --- | --- | --- |
 | Toggle Key | `R + RightAlt` | Shows/hides the rings. |
-| Max Radius | `50` | Rings are drawn out to this distance, in metres. |
-| Ring Spacing | `5` | Distance between rings, in metres. |
+| Max Radius | `50` | Rings are drawn out to this distance, in meters. |
+| Ring Spacing | `5` | Distance between rings, in meters. |
 | Ring Segments | `64` | Points per ring circle. Higher is smoother but costs more per refresh. |
 | Update Interval | `0.15` | Seconds between ring refreshes while visible. Lower is smoother but costs more. |
 | Highlight Every | `2` | Every Nth ring is drawn brighter/thicker (e.g. `2` highlights 10m/20m/30m... at 5m spacing). `0` disables highlighting. |

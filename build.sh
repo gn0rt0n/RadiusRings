@@ -11,7 +11,7 @@
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-VERSION="1.0.0"
+VERSION="1.0.2"
 
 export VALHEIM_GAME_DIR="${VALHEIM_GAME_DIR:-$HOME/Library/Application Support/Steam/steamapps/common/Valheim}"
 BEPINEX_DIR="${VALHEIM_BEPINEX_DIR:-$VALHEIM_GAME_DIR/BepInEx}"
