@@ -9,7 +9,7 @@ namespace RadiusRings;
 public class Plugin : BaseUnityPlugin
 {
     private const string Guid = "EleventhTower.valheim.radiusrings";
-    private const string Version = "1.0.0";
+    private const string Version = "1.0.1";
 
     private static readonly Color RingColor = new Color(0.25f, 0.9f, 1f, 0.85f);
     private static readonly Color HighlightColor = new Color(1f, 0.78f, 0.15f, 0.95f);
